@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <section id="calculator">
+        <div class="render">{{ render }}</div>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button v-on:click="n1">1</button>
+                    <button v-on:click="n2">2</button>
+                    <button v-on:click="n3">3</button>
+                    <button v-on:click="plus">+</button>
+                </li>
+                <li>
+                    <button v-on:click="n4">4</button>
+                    <button v-on:click="n5">5</button>
+                    <button v-on:click="n6">6</button>
+                    <button v-on:click="less">-</button>
+                </li>
+                <li>
+                    <button v-on:click="n7">7</button>
+                    <button v-on:click="n8">8</button>
+                    <button v-on:click="n9">9</button>
+                    <button v-on:click="division">/</button>
+                </li>
+                <li>
+                    <button v-on:click="n0">0</button>
+                    <button v-on:click="equal">=</button>
+                    <button v-on:click="times">X</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
