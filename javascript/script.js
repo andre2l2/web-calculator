@@ -64,7 +64,8 @@ const calc = new Vue({
         },
 
         equal: function() {
-            
+            const result = claculator(this.render);
+            this.render = `${result}`;
         },
 
         times: function() {

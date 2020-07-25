@@ -1,46 +1,57 @@
-function stringToNumber(num) {
-
-    const calcArray = new Array();
+function claculator(arr) {
+    const commands = new Array();
+    const values = new Array();
     let val = '';
 
-    for (id in num) {
-        if (num[id] == '+') {
-            calcArray.push(Number(val));
-            calcArray.push('+');
+    for (id in arr) {
+
+        if (arr[id] == '+') {
+            values.push(Number(val));
+            commands.push('+');
             val = '';
         }
-
-        else if (num[id] == '-') {
-            calcArray.push(Number(val));
-            calcArray.push('-');
+        else if (arr[id] == '-') {
+            values.push(Number(val));
+            commands.push('-');
             val = '';
         }
-
-        else if (num[id] == '*') {
-            calcArray.push(Number(val));
-            calcArray.push('*');
+        else if (arr[id] == '/') {
+            values.push(Number(val));
+            commands.push('/');
             val = '';
         }
-
-        else if (num[id] == '/') {
-            calcArray.push(Number(val));
-            calcArray.push('/');
+        else if (arr[id] == '*') {
+            values.push(Number(val));
+            commands.push('*');
             val = '';
         }
-
         else {
-            val += `${num[id]}`;
+            val += `${arr[id]}`;
         }
     }
-    calcArray.push(Number(val));
-    console.log(calcArray);
-    return calcArray;
+    values.push(Number(val));
+    console.log(commands);
+    console.log(values);
+
+    let result = 0;
+
+    for (id in commands) {
+        if (commands[id] == '+') {
+            result = values[0] + values[1];
+        }
+        else if (commands[id] == '-') {
+            result = values[0] - values[1];
+        }
+        else if (commands[id] == '*') {
+            result = values[0] * values[1];
+        }
+        else if (commands[id] == '/') {
+            result = values[0] / values[1];
+        }
+    }
+
+    console.log(result);
+
+    return result;
+   
 }
-
-function calculator(arr) {
-    let result;
-
-
-}
-
-calculator([100, '+', 200]);
