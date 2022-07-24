@@ -1,0 +1,18 @@
+{
+	"name": "calculatorweb",
+	"version": "0.1.0",
+	"description": "Calculator Web",
+	"main": "",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andre2l2/CalculatorWeb.git"
+	},
+	"keywords": [],
+	"author": "Andre Ferreira",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/andre2l2/CalculatorWeb/issues"
+	},
+	"homepage": "https://github.com/andre2l2/CalculatorWeb#readme"
+}
