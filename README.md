@@ -5,5 +5,3 @@
 - That calculator I using SASS and Vue.js
 
 See on [https://andre2l2.github.io/CalculatorWeb/](https://andre2l2.github.io/CalculatorWeb/)
-
-> working in progress! (WP)
