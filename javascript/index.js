@@ -20,7 +20,8 @@ class Buttons {
 	}
 
 	insert(value) {
-		this.commads.push(value);
+		if (value === 'x') return this.multiplication();
+		return this.commads.push(value);
 	}
 
 	clear() {
@@ -42,7 +43,8 @@ class Buttons {
 }
 
 function start(e) {
-	const value = e.path[0].innerHTML;
+	console.log(e.target.innerText);
+	const value = e.target.innerText;
 
 	if (value !== '=') buttons.insert(value);
 
